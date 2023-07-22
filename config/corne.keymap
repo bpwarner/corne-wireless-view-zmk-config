@@ -60,10 +60,10 @@
 // | A+Up | A+Down | A+Left | A+Right |     |       |     |     |     |     |      |
 // ----------------| ctr    | shf     | cmd |       |     |     |     |-------------
 //                 --------------------------       -------------------
-&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &none          &kp ESC &none          &none           &none          &none        &none
-&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &none          &none   &none          &none           &kp DEL        &kp BSPC     &none
-&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &none          &none   &mmv MOVE_LEFT &mmv MOVE_RIGHT &mmv MOVE_DOWN &mmv MOVE_UP &none
-                              &kp LCTRL    &kp LSHFT     &kp LGUI       &none   &mo Syst       &none
+&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK       &kp ESC &none          &none           &none          &none        &none
+&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK       &none   &mmv MOVE_LEFT &mmv MOVE_RIGHT &mmv MOVE_DOWN &mmv MOVE_UP &none
+&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK       &none   &mkp MB5       &mkp MB4        &kp DEL        &kp BSPC     &none
+                              &kp LCTRL    &kp LSHFT     &kp LGUI        &none   &mo Syst       &none
                         >;
                 };
 
