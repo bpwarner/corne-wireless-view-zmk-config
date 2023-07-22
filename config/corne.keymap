@@ -17,6 +17,7 @@
     combos {
         compatible = "zmk,combos";
         combo_ampersand {
+            timeout-ms = <5000>;
             key-positions = <37 25>;
             bindings = <&kp AMPERSAND>;
             layers = <0>;
