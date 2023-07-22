@@ -53,15 +53,15 @@
                         label = "Move";
                         bindings = <
 // ------------------------------------------       --------------------------------
-// | PgUp | PgDn   | Home   | End     |     |       |     |     |     |     |      |
+// | PgUp | PgDn   | Home   | End     |     |       | esc |     |     |     |      |
 // | Up   | Down   | Left   | Right   |     |       |     |     |     |     |      |
 // | A+Up | A+Down | A+Left | A+Right |     |       |     |     |     | del | bspc |
 // ----------------| ctr    | shf     | cmd |       |     |     |     |-------------
 //                 --------------------------       -------------------
-&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &none          &none &none &none &none   &none    &none
-&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &none          &none &none &none &none   &none    &none
-&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &none          &none &none &none &kp DEL &kp BSPC &none
-                              &kp LCTRL    &kp LSHFT     &kp LGUI       &none &none &none
+&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &none          &kp ESC &none &none &none   &none    &none
+&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &none          &none   &none &none &none   &none    &none
+&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &none          &none   &none &none &kp DEL &kp BSPC &none
+                              &kp LCTRL    &kp LSHFT     &kp LGUI       &none   &none &none
                         >;
                 };
 
