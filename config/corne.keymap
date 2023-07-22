@@ -8,6 +8,22 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+// | 0  | 1  | 2  | 3  | 4  | 5  |     | 6  | 7  | 8  | 9  | 10 | 11 |
+// | 12 | 13 | 14 | 15 | 16 | 17 |     | 18 | 19 | 20 | 21 | 22 | 23 |
+// | 24 | 25 | 26 | 27 | 28 | 29 |     | 30 | 31 | 32 | 33 | 34 | 35 |
+//                | 36 | 37 | 38 |     | 39 | 40 | 41 |
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -16,13 +32,13 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  '  |  ,  |  .  |  p  |  y  |   |  f  |  g   |  c  |  r  |  l  | BKSP |
 // | CTRL |  a  |  o  |  e  |  u  |  i  |   |  d  |  h   |  t  |  n  |  s  |  '   |
-// | SHFT |  ;  |  q  |  j  |  k  |  x  |   |  b  |  m   |  w  |  v  |  z  | ESC  |
+// | SHFT |  _  |  q  |  j  |  k  |  x  |   |  b  |  m   |  w  |  v  |  z  | ESC  |
 //                    | ctr | shf | cmd |   | ret | spc  | tab |
                         label = "Base";
                         bindings = <
-   &kp TAB   &kp SQT  &kp COMMA &kp DOT   &kp P     &kp Y    &kp F   &kp G     &kp C   &kp R &kp L &kp BSPC
-   &kp LCTRL &kp A    &kp O     &kp E     &kp U     &kp I    &kp D   &kp H     &kp T   &kp N &kp S &kp SQT
-   &kp LSHFT &kp SEMI &kp Q     &kp J     &kp K     &kp X    &kp B   &kp M     &kp W   &kp V &kp Z &kp ESC
+   &kp TAB   &kp SQT   &kp COMMA &kp DOT   &kp P     &kp Y    &kp F   &kp G     &kp C   &kp R &kp L &kp BSPC
+   &kp LCTRL &kp A     &kp O     &kp E     &kp U     &kp I    &kp D   &kp H     &kp T   &kp N &kp S &kp SQT
+   &kp LSHFT &kp UNDER &kp Q     &kp J     &kp K     &kp X    &kp B   &kp M     &kp W   &kp V &kp Z &kp ESC
                                 &kp LCTRL &kp LSHFT &kp LGUI &kp RET &kp SPACE &kp TAB
                         >;
                 };
