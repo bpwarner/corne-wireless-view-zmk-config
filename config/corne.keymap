@@ -59,7 +59,7 @@
 &none &kp SEMI &kp COMMA &kp DOT   &kp P     &kp Y          &kp F        &kp G          &kp C        &kp R &kp L &none
 &none &kp A    &kp O     &kp E     &kp U     &kp I          &kp D        &kp H          &kp T        &kp N &kp S &none
 &none &un_amp  &kp Q     &kp J     &kp K     &kp X          &kp B        &kp M          &kp W        &kp V &kp Z &none
-                          &kp LCTRL &kp LSHFT &kp LGUI       &lt Move RET &lt Symb SPACE &lt Nums TAB
+                         &kp LCTRL &kp LSHFT &kp LGUI       &lt Symb RET &lt Move SPACE &lt Nums TAB
                         >;
                 };
 
@@ -75,7 +75,7 @@
 &none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK       &kp ESC &none          &none           &kp DEL        &kp BSPC     &none
 &none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK       &none   &mmv MOVE_LEFT &mmv MOVE_RIGHT &mmv MOVE_DOWN &mmv MOVE_UP &none
 &none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK       &none   &mkp MB5       &mkp MB4        &none          &none        &none
-                              &kp LCTRL    &kp LSHFT     &kp LGUI        &none   &mo Syst       &none
+                              &kp LCTRL    &kp LSHFT     &kp LGUI        &none   &none          &mo Syst
                         >;
                 };
 
