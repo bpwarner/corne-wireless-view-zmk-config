@@ -12,6 +12,7 @@
 #define Move 1
 #define Symb 2
 #define Nums 3
+#define Syst 4
 
 // | 1  | 2  | 3  | 4  | 5  |     | 6  | 7  | 8  | 9  | 10 |
 // | 13 | 14 | 15 | 16 | 17 |     | 18 | 19 | 20 | 21 | 22 |
@@ -58,10 +59,10 @@
 // | A+Up | A+Down | A+Left | A+Right |     |       |     |     |     | del | bspc |
 // ----------------| ctr    | shf     | cmd |       |     |     |     |-------------
 //                 --------------------------       -------------------
-&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &none          &kp ESC &none &none &none   &none    &none
-&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &none          &none   &none &none &none   &none    &none
-&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &none          &none   &none &none &kp DEL &kp BSPC &none
-                              &kp LCTRL    &kp LSHFT     &kp LGUI       &none   &none &none
+&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &none          &kp ESC &none    &none &none   &none    &none
+&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &none          &none   &none    &none &none   &none    &none
+&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &none          &none   &none    &none &kp DEL &kp BSPC &none
+                              &kp LCTRL    &kp LSHFT     &kp LGUI       &none   &mo Syst &none
                         >;
                 };
 
@@ -94,6 +95,22 @@
 &none &kp N6  &kp N4  &kp N2    &kp N0  &kp N8         &kp N9  &kp N1  &kp N3  &kp N5  &kp N7  &none
 &none &kp F6  &kp F4  &kp F2    &kp F10 &kp F8         &kp F9  &kp F1  &kp F3  &kp F5  &kp F7  &none
                       &kp LCTRL &none   &kp LGUI       &none   &none   &none
+                        >;
+                };
+
+                system_layer {
+                        label = "System";
+                        bindings = <
+// ------------------------------       ------------------------------------------
+// |  |  | Bright- | Bright+ |  |       | Play/Pause | Vol+ | Vol- | Next | Prev |
+// |  |  |         |         |  |       |            |      |      |      |      |
+// |  |  |         |         |  |       |            |      |      |      |      |
+// ------|         |         |  |       |            |      |      |--------------
+//       ------------------------       ----------------------------
+&none &none &none &kp C_BRI_DN &kp C_BRI_UP &none       &kp C_PP &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT &kp C_PREV &none
+&none &none &none &none        &none        &none       &none    &none        &none        &none      &none      &none
+&none &none &none &none        &none        &none       &none    &none        &none        &none      &none      &none
+                  &none        &none        &none       &none    &none        &none
                         >;
                 };
         };
