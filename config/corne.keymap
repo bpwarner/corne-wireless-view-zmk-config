@@ -32,6 +32,18 @@
 //                   &none &none &none       &none &none &none
 
 / {
+    behaviors {
+        un_amp: underscore_ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDERSCORE_AMPERSAND";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER>, <&kp AMPS>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -41,12 +53,12 @@
 // -------------------------------       -------------------------------
 // | ; |  ,  | .    | p    | y   |       |  f  |  g  |  c  |  r  |  l  |
 // | a |  o  | e    | u    | i   |       |  d  |  h  |  t  |  n  |  s  |
-// | - |  q  | j    | k    | x   |       |  b  |  m  |  w  |  v  |  z  |
+// | _ |  q  | j    | k    | x   |       |  b  |  m  |  w  |  v  |  z  |
 // ----------| ctrl | shft | gui |       | ret | spc | tab |------------
 //           ---------------------       -------------------
-&none &kp SEMI  &kp COMMA &kp DOT   &kp P     &kp Y          &kp F        &kp G          &kp C        &kp R &kp L &none
-&none &kp A     &kp O     &kp E     &kp U     &kp I          &kp D        &kp H          &kp T        &kp N &kp S &none
-&none &kp MINUS &kp Q     &kp J     &kp K     &kp X          &kp B        &kp M          &kp W        &kp V &kp Z &none
+&none &kp SEMI &kp COMMA &kp DOT   &kp P     &kp Y          &kp F        &kp G          &kp C        &kp R &kp L &none
+&none &kp A    &kp O     &kp E     &kp U     &kp I          &kp D        &kp H          &kp T        &kp N &kp S &none
+&none &un_amp  &kp Q     &kp J     &kp K     &kp X          &kp B        &kp M          &kp W        &kp V &kp Z &none
                           &kp LCTRL &kp LSHFT &kp LGUI       &lt Move RET &lt Symb SPACE &lt Nums TAB
                         >;
                 };
