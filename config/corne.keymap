@@ -14,32 +14,20 @@
 //           | 36 | 37 | 38 |     | 39 | 40 | 41 |
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_ampersand {
-            timeout-ms = <5000>;
-            key-positions = <37 25>;
-            bindings = <&kp AMPERSAND>;
-            layers = <0>;
-        };
-    };
-};
-
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  '  |  ,  |  .  |  p  |  y  |   |  f  |  g   |  c  |  r  |  l  | BKSP |
-// | CTRL |  a  |  o  |  e  |  u  |  i  |   |  d  |  h   |  t  |  n  |  s  |  '   |
-// | SHFT |  _  |  q  |  j  |  k  |  x  |   |  b  |  m   |  w  |  v  |  z  | ESC  |
-//                    | ctr | shf | cmd |   | ret | spc  | tab |
+// |  TAB | ; |  ,  |  .  |  p  |  y  |   |  f  |  g   |  c  |  r  |  l  | BKSP |
+// | CTRL | a |  o  |  e  |  u  |  i  |   |  d  |  h   |  t  |  n  |  s  |  '   |
+// | SHFT | - |  q  |  j  |  k  |  x  |   |  b  |  m   |  w  |  v  |  z  | ESC  |
+//                  | ctr | shf | cmd |   | ret | spc  | tab |
                         label = "Base";
                         bindings = <
    &kp TAB   &kp SQT   &kp COMMA &kp DOT   &kp P     &kp Y    &kp F   &kp G     &kp C   &kp R &kp L &kp BSPC
    &kp LCTRL &kp A     &kp O     &kp E     &kp U     &kp I    &kp D   &kp H     &kp T   &kp N &kp S &kp SQT
-   &kp LSHFT &kp UNDER &kp Q     &kp J     &kp K     &kp X    &kp B   &kp M     &kp W   &kp V &kp Z &kp ESC
+   &kp LSHFT &kp MINUS &kp Q     &kp J     &kp K     &kp X    &kp B   &kp M     &kp W   &kp V &kp Z &kp ESC
                                 &kp LCTRL &kp LSHFT &kp LGUI &kp RET &kp SPACE &kp TAB
                         >;
                 };
