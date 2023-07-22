@@ -47,22 +47,22 @@
 &none &kp SEMI  &kp COMMA &kp DOT   &kp P     &kp Y          &kp F        &kp G          &kp C        &kp R &kp L &none
 &none &kp A     &kp O     &kp E     &kp U     &kp I          &kp D        &kp H          &kp T        &kp N &kp S &none
 &none &kp MINUS &kp Q     &kp J     &kp K     &kp X          &kp B        &kp M          &kp W        &kp V &kp Z &none
-                          &kp LCTRL &kp LSHFT &kp LGUI       &lt Nums RET &lt Symb SPACE &lt Move TAB
+                          &kp LCTRL &kp LSHFT &kp LGUI       &lt Move RET &lt Symb SPACE &lt Nums TAB
                         >;
                 };
 
                 move_layer {
                         label = "Move";
                         bindings = <
-// ------------------------------------------       --------------------------------
-// | PgUp | PgDn   | Home   | End     |     |       | esc |     |     |     |      |
-// | Up   | Down   | Left   | Right   |     |       |     |     |     | del | bspc |
-// | A+Up | A+Down | A+Left | A+Right |     |       |     |     |     |     |      |
-// ----------------| ctr    | shf     | cmd |       |     |     |     |-------------
-//                 --------------------------       -------------------
-&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK       &kp ESC &none          &none           &none          &none        &none
+// ---------------------------------------------       -----------------------------------------
+// | PgUp | PgDn   | Home   | End     | MClick |       | esc |        |        | del   | bpsc  |
+// | Up   | Down   | Left   | Right   | LClick |       |     | MoveL  | MoveR  | MoveD | MoveU |
+// | A+Up | A+Down | A+Left | A+Right | RClick |       |     | Mouse5 | Mouse4 |       |       |
+// ----------------| ctr    | shf     | cmd    |       |     |        |        |----------------
+//                 -----------------------------       -------------------------
+&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK       &kp ESC &none          &none           &kp DEL        &kp BSPC     &none
 &none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK       &none   &mmv MOVE_LEFT &mmv MOVE_RIGHT &mmv MOVE_DOWN &mmv MOVE_UP &none
-&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK       &none   &mkp MB5       &mkp MB4        &kp DEL        &kp BSPC     &none
+&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK       &none   &mkp MB5       &mkp MB4        &none          &none        &none
                               &kp LCTRL    &kp LSHFT     &kp LGUI        &none   &mo Syst       &none
                         >;
                 };
