@@ -84,13 +84,13 @@
                         bindings = <
 // --------------------       --------------------
 // | @ | ~ | ` | # |  |       |  | [ | ] | ' | " |
-// | ! | ^ | + | = |  |       |  | ( | ) | { | } |
-// | ? | % | * | $ |  |       |  | / | \ | & | | |
+// | ! | - | + | = |  |       |  | ( | ) | { | } |
+// | ? | % | * | $ |  |       |  | / | \ | ^ | | |
 // --------|   |   |  |       |  |   |   |--------
 //         ------------       ------------
 &none &kp AT    &kp TILDE &kp GRAVE &kp HASH  &none          &none &kp LBKT &kp RBKT &kp SQT  &kp DQT  &none
-&none &kp EXCL  &kp CARET &kp PLUS  &kp EQUAL &none          &none &kp LPAR &kp RPAR &kp LBRC &kp RBRC &none
-&none &kp QMARK &kp PRCNT &kp STAR  &kp DLLR  &none          &none &kp FSLH &kp BSLH &kp AMPS &kp PIPE &none
+&none &kp EXCL  &kp MINUS &kp PLUS  &kp EQUAL &none          &none &kp LPAR &kp RPAR &kp LBRC &kp RBRC &none
+&none &kp QMARK &kp PRCNT &kp STAR  &kp DLLR  &none          &none &kp FSLH &kp BSLH &kp CARET &kp PIPE &none
                           &kp LCTRL &none     &kp LGUI       &none &none &none
                         >;
                 };
