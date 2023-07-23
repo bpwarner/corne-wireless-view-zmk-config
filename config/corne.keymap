@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
+#define U_MOUSE_MOVE_FAST_MAX 1500
+
+#define MOVE_U_FAST MOVE_VERT(-U_MOUSE_MOVE_FAST_MAX)
+#define MOVE_D_FAST MOVE_VERT(U_MOUSE_MOVE_FAST_MAX)
+#define MOVE_L_FAST MOVE_HOR(-U_MOUSE_MOVE_FAST_MAX)
+#define MOVE_R_FAST MOVE_HOR(U_MOUSE_MOVE_FAST_MAX)
+
+#define U_MOUSE_MOVE_SLOW_MAX 500
+
+#define MOVE_U_SLOW MOVE_VERT(-U_MOUSE_MOVE_SLOW_MAX)
+#define MOVE_D_SLOW MOVE_VERT(U_MOUSE_MOVE_SLOW_MAX)
+#define MOVE_L_SLOW MOVE_HOR(-U_MOUSE_MOVE_SLOW_MAX)
+#define MOVE_R_SLOW MOVE_HOR(U_MOUSE_MOVE_SLOW_MAX)
+
 #define Base 0
 #define Move 1
 #define Symb 2
@@ -59,7 +73,7 @@
 &none &kp SEMI &kp COMMA &kp DOT   &kp P     &kp Y          &kp F        &kp G          &kp C        &kp R &kp L &none
 &none &kp A    &kp O     &kp E     &kp U     &kp I          &kp D        &kp H          &kp T        &kp N &kp S &none
 &none &un_amp  &kp Q     &kp J     &kp K     &kp X          &kp B        &kp M          &kp W        &kp V &kp Z &none
-                         &kp LCTRL &kp LSHFT &kp LGUI       &lt Symb RET &lt Move SPACE &lt Nums TAB
+                         &kp LCTRL &kp LSHFT &kp LGUI       &lt Move RET &lt Symb SPACE &lt Nums TAB
                         >;
                 };
 
@@ -73,8 +87,8 @@
 // ----------------| ctr    | shf     | cmd    |       |     |         |         |--------------------
 //                 -----------------------------       ---------------------------
 &none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK       &kp ESC &mwh SCROLL_LEFT &mwh SCROLL_RIGHT &mwh SCROLL_DOWN &mwh SCROLL_UP &none
-&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK       &none   &mmv MOVE_LEFT   &mmv MOVE_RIGHT   &mmv MOVE_DOWN  &mmv MOVE_UP  &none
-&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK       &none   &mkp MB5         &mkp MB4          &kp DEL         &kp BSPC      &none
+&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK       &none   &mmv MOVE_L_FAST &mmv MOVE_R_FAST  &mmv MOVE_DOWN  &mmv MOVE_UP  &none
+&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK       &none   &mkp MOVE_L_SLOW &mkp MOVE_R_SLOW  &kp DEL         &kp BSPC      &none
                               &kp LCTRL    &kp LSHFT     &kp LGUI        &none   &none            &mo Syst
                         >;
                 };
