@@ -72,7 +72,7 @@
 // | A+Up | A+Down | A+Left | A+Right | RClick |       |     | Mouse5  | Mouse4  | del     | bspc    |
 // ----------------| ctr    | shf     | cmd    |       |     |         |         |--------------------
 //                 -----------------------------       ---------------------------
-&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK       &kp ESC &mwh SCROLL_LEFT &mwh SCROLL_RIGHT &kp SCROLL_DOWN &kp SCROLL_UP &none
+&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK       &kp ESC &mwh SCROLL_LEFT &mwh SCROLL_RIGHT &mwh SCROLL_DOWN &mwh SCROLL_UP &none
 &none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK       &none   &mmv MOVE_LEFT   &mmv MOVE_RIGHT   &mmv MOVE_DOWN  &mmv MOVE_UP  &none
 &none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK       &none   &mkp MB5         &mkp MB4          &kp DEL         &kp BSPC      &none
                               &kp LCTRL    &kp LSHFT     &kp LGUI        &none   &none            &mo Syst
