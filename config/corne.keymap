@@ -127,7 +127,7 @@
 //                 -----------------------------       ---------------------------
 &none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK         &kp ESC  &mwh SCROLL_L    &mwh SCROLL_R    &mwh SCROLL_D    &mwh SCROLL_U    &none
 &none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK         &kp BSPC &mmv MOVE_L_FAST &mmv MOVE_R_FAST &mmv MOVE_D_FAST &mmv MOVE_U_FAST &none
-&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK         &kp DEL  &mkp MOVE_L_SLOW &mkp MOVE_R_SLOW &kp DEL          &kp BSPC         &none
+&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK         &kp DEL  &mkp MB5         &mkp MB4         &kp DEL          &kp BSPC         &none
                               &td_gui_alt  &td_ctrl_os   &kp LSHFT         &none    &mo Syst         &none
                         >;
                 };
