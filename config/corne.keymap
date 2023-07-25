@@ -88,7 +88,7 @@
 &none &kp SEMI &kp COMMA &kp DOT   &kp P     &kp Y              &kp F        &kp G          &kp C        &kp R &kp L &none
 &none &kp A    &kp O     &kp E     &kp U     &kp I              &kp D        &kp H          &kp T        &kp N &kp S &none
 &none &un_amp  &kp Q     &kp J     &kp K     &kp X              &kp B        &kp M          &kp W        &kp V &kp Z &none
-                         &kp LCTRL &kp LSHFT &td_gui_alt        &lt Move RET &lt Symb SPACE &lt Nums TAB
+                         &td_gui_alt &kp LSHFT &kp LCTRL        &lt Move RET &lt Symb SPACE &lt Nums TAB
                         >;
                 };
 
@@ -104,7 +104,7 @@
 &none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK         &kp ESC  &mwh SCROLL_L    &mwh SCROLL_R    &mwh SCROLL_D    &mwh SCROLL_U    &none
 &none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK         &kp BSPC &mmv MOVE_L_FAST &mmv MOVE_R_FAST &mmv MOVE_D_FAST &mmv MOVE_U_FAST &none
 &none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK         &kp DEL  &mkp MOVE_L_SLOW &mkp MOVE_R_SLOW &kp DEL          &kp BSPC         &none
-                              &kp LCTRL    &kp LSHFT     &td_gui_alt       &none    &mo Syst         &none
+                              &td_gui_alt    &kp LSHFT     &kp LCTRL       &none    &mo Syst         &none
                         >;
                 };
 
@@ -120,7 +120,7 @@
 &none &kp AT    &kp TILDE &kp GRAVE &kp HASH  &none             &none &kp LBKT &kp RBKT &kp SQT  &kp DQT  &none
 &none &kp EXCL  &kp MINUS &kp PLUS  &kp EQUAL &none             &none &kp LPAR &kp RPAR &kp LBRC &kp RBRC &none
 &none &kp QMARK &kp PRCNT &kp STAR  &kp DLLR  &none             &none &kp FSLH &kp BSLH &kp CARET &kp PIPE &none
-                          &kp LCTRL &none     &td_gui_alt       &none &none &none
+                          &td_gui_alt &none     &kp LCTRL       &none &none &none
                         >;
                 };
 
@@ -136,7 +136,7 @@
 &none &kp F16 &kp F14 &kp F12   &kp F20 &kp F18           &kp F19 &kp F11 &kp F13 &kp F15 &kp F17 &none
 &none &kp N6  &kp N4  &kp N2    &kp N0  &kp N8            &kp N9  &kp N1  &kp N3  &kp N5  &kp N7  &none
 &none &kp F6  &kp F4  &kp F2    &kp F10 &kp F8            &kp F9  &kp F1  &kp F3  &kp F5  &kp F7  &none
-                      &kp LCTRL &none   &td_gui_alt       &none   &none   &none
+                      &td_gui_alt &none   &kp LCTRL       &none   &none   &none
                         >;
                 };
 
@@ -152,7 +152,7 @@
 &none &none &none &kp C_BRI_DN &kp C_BRI_UP &kp C_SLEEP       &kp C_PP   &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT &kp C_PREV &none
 &none &none &none &none        &none        &kp C_PWR         &none      &none        &none        &none      &none      &none
 &none &none &none &none        &none        &kp C_RESET       &bt BT_CLR &bt BT_PRV   &bt BT_NXT   &none      &none      &none
-                  &kp LCTRL    &kp LSHIFT   &td_gui_alt       &none      &none        &none
+                  &td_gui_alt    &kp LSHIFT   &kp LCTRL       &none      &none        &none
                         >;
                 };
         };
