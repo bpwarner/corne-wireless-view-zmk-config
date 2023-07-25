@@ -62,6 +62,22 @@
             mods = <(MOD_LSFT)>;
         };
 
+        dot_sqt: dot_single_quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_SINGLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp SQT>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        com_dqt: comma_double_quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_DOUBLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp DQT>;
+            mods = <(MOD_LSFT)>;
+        };
+
         td_gui_alt: tap_dance_gui_alt {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -85,7 +101,7 @@
 // | _ |  q  | j    | k    | x   |       |  b  |  m  |  w  |  v  |  z  |
 // ----------| ctrl | shft | gui |       | ret | spc | tab |------------
 //           ---------------------       -------------------
-&none &kp SEMI &kp COMMA &kp DOT     &kp P     &kp Y              &kp F        &kp G          &kp C        &kp R &kp L &none
+&none &com_dqt &dot_sqt  &kp DOT     &kp P     &kp Y              &kp F        &kp G          &kp C        &kp R &kp L &none
 &none &kp A    &kp O     &kp E       &kp U     &kp I              &kp D        &kp H          &kp T        &kp N &kp S &none
 &none &un_amp  &kp Q     &kp J       &kp K     &kp X              &kp B        &kp M          &kp W        &kp V &kp Z &none
                          &td_gui_alt &kp LCTRL &kp LSHFT        &lt Move SPACE &lt Symb RET &lt Nums TAB
@@ -112,13 +128,13 @@
                         label = "Symbols";
                         bindings = <
 // --------------------       --------------------
-// | @ | ~ | ` | # |  |       |  | [ | ] | ' | " |
+// | @ | ~ | ` | # |  |       |  | [ | ] | < | > |
 // | ! | - | + | = |  |       |  | ( | ) | { | } |
 // | ? | % | * | $ |  |       |  | / | \ | ^ | | |
 // --------|   |   |  |       |  |   |   |--------
 //         ------------       ------------
-&none &kp AT    &kp TILDE &kp GRAVE   &kp HASH  &none             &none &kp LBKT &kp RBKT &kp SQT  &kp DQT  &none
-&none &kp EXCL  &kp MINUS &kp PLUS    &kp EQUAL &none             &none &kp LPAR &kp RPAR &kp LBRC &kp RBRC &none
+&none &kp AT    &kp TILDE &kp GRAVE   &kp HASH  &none             &none &kp LBKT &kp RBKT &kp LT    &kp GT   &none
+&none &kp EXCL  &kp MINUS &kp PLUS    &kp EQUAL &none             &none &kp LPAR &kp RPAR &kp LBRC  &kp RBRC &none
 &none &kp QMARK &kp PRCNT &kp STAR    &kp DLLR  &none             &none &kp FSLH &kp BSLH &kp CARET &kp PIPE &none
                           &td_gui_alt &kp LCTRL &none             &none &none &none
                         >;
