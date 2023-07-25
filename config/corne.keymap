@@ -88,7 +88,7 @@
 &none &kp SEMI &kp COMMA &kp DOT   &kp P     &kp Y              &kp F        &kp G          &kp C        &kp R &kp L &none
 &none &kp A    &kp O     &kp E     &kp U     &kp I              &kp D        &kp H          &kp T        &kp N &kp S &none
 &none &un_amp  &kp Q     &kp J     &kp K     &kp X              &kp B        &kp M          &kp W        &kp V &kp Z &none
-                         &td_gui_alt &kp LSHFT &kp LCTRL        &lt Move RET &lt Symb SPACE &lt Nums TAB
+                         &td_gui_alt &kp LSHFT &kp LCTRL        &lt Move SPACE &lt Symb RET &lt Nums TAB
                         >;
                 };
 
