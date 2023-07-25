@@ -92,7 +92,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp LCTRL>, <&kp LC(LG(LALT))>;
-        }
+        };
     };
 };
 
