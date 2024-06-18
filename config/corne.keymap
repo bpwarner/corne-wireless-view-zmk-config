@@ -11,24 +11,24 @@
 
 #define U_MOUSE_MOVE_FAST_MAX 1000
 
-#define MOVE_U_FAST MOVE_VERT(-U_MOUSE_MOVE_FAST_MAX)
-#define MOVE_D_FAST MOVE_VERT(U_MOUSE_MOVE_FAST_MAX)
-#define MOVE_L_FAST MOVE_HOR(-U_MOUSE_MOVE_FAST_MAX)
-#define MOVE_R_FAST MOVE_HOR(U_MOUSE_MOVE_FAST_MAX)
+#define MOVE_U_FAST MOVE_Y(-U_MOUSE_MOVE_FAST_MAX)
+#define MOVE_D_FAST MOVE_Y(U_MOUSE_MOVE_FAST_MAX)
+#define MOVE_L_FAST MOVE_X(-U_MOUSE_MOVE_FAST_MAX)
+#define MOVE_R_FAST MOVE_X(U_MOUSE_MOVE_FAST_MAX)
 
 #define U_MOUSE_MOVE_SLOW_MAX 250
 
-#define MOVE_U_SLOW MOVE_VERT(-U_MOUSE_MOVE_SLOW_MAX)
-#define MOVE_D_SLOW MOVE_VERT(U_MOUSE_MOVE_SLOW_MAX)
-#define MOVE_L_SLOW MOVE_HOR(-U_MOUSE_MOVE_SLOW_MAX)
-#define MOVE_R_SLOW MOVE_HOR(U_MOUSE_MOVE_SLOW_MAX)
+#define MOVE_U_SLOW MOVE_Y(-U_MOUSE_MOVE_SLOW_MAX)
+#define MOVE_D_SLOW MOVE_Y(U_MOUSE_MOVE_SLOW_MAX)
+#define MOVE_L_SLOW MOVE_X(-U_MOUSE_MOVE_SLOW_MAX)
+#define MOVE_R_SLOW MOVE_X(U_MOUSE_MOVE_SLOW_MAX)
 
 #define U_MOUSE_SCROLL_FAST 20
 
-#define SCROLL_U SCROLL_VERT(U_MOUSE_SCROLL_FAST)
-#define SCROLL_D SCROLL_VERT(-U_MOUSE_SCROLL_FAST)
-#define SCROLL_L SCROLL_HOR(-U_MOUSE_SCROLL_FAST)
-#define SCROLL_R SCROLL_HOR(U_MOUSE_SCROLL_FAST)
+#define SCROLL_U MOVE_Y(U_MOUSE_SCROLL_FAST)
+#define SCROLL_D MOVE_Y(-U_MOUSE_SCROLL_FAST)
+#define SCROLL_L MOVE_X(-U_MOUSE_SCROLL_FAST)
+#define SCROLL_R MOVE_X(U_MOUSE_SCROLL_FAST)
 
 #define Base 0
 #define Move 1
@@ -116,21 +116,21 @@
                         >;
                 };
 
-//                 move_layer {
-//                         label = "Move";
-//                         bindings = <
-// // ---------------------------------------------       -----------------------------------------------
-// // | PgUp | PgDn   | Home   | End     | MClick |       | esc | ScrollL | ScrollR | ScrollD | ScrollR |
-// // | Up   | Down   | Left   | Right   | LClick |       |     | MoveL   | MoveR   | MoveD   | MoveU   |
-// // | A+Up | A+Down | A+Left | A+Right | RClick |       |     | Mouse5  | Mouse4  | del     | bspc    |
-// // ----------------| ctr    | shf     | cmd    |       |     |         |         |--------------------
-// //                 -----------------------------       ---------------------------
-// &none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK         &kp ESC  &mwh SCROLL_L    &mwh SCROLL_R    &mwh SCROLL_D    &mwh SCROLL_U    &none
-// &none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK         &kp BSPC &mmv MOVE_L_FAST &mmv MOVE_R_FAST &mmv MOVE_D_FAST &mmv MOVE_U_FAST &none
-// &none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK         &kp DEL  &mkp MB5         &mkp MB4         &kp DEL          &kp BSPC         &none
-//                               &td_gui_alt  &td_ctrl_os   &kp LSHFT         &none    &mo Syst         &none
-//                         >;
-//                 };
+                move_layer {
+                        label = "Move";
+                        bindings = <
+// ---------------------------------------------       -----------------------------------------------
+// | PgUp | PgDn   | Home   | End     | MClick |       | esc | ScrollL | ScrollR | ScrollD | ScrollR |
+// | Up   | Down   | Left   | Right   | LClick |       |     | MoveL   | MoveR   | MoveD   | MoveU   |
+// | A+Up | A+Down | A+Left | A+Right | RClick |       |     | Mouse5  | Mouse4  | del     | bspc    |
+// ----------------| ctr    | shf     | cmd    |       |     |         |         |--------------------
+//                 -----------------------------       ---------------------------
+&none &kp PG_UP  &kp PG_DN    &kp HOME     &kp END       &mkp MCLK         &kp ESC  &msc SCROLL_L    &msc SCROLL_R    &msc SCROLL_D    &msc SCROLL_U    &none
+&none &kp UP     &kp DOWN     &kp LEFT     &kp RIGHT     &mkp LCLK         &kp BSPC &mmv MOVE_L_FAST &mmv MOVE_R_FAST &mmv MOVE_D_FAST &mmv MOVE_U_FAST &none
+&none &kp LA(UP) &kp LA(DOWN) &kp LA(LEFT) &kp LA(RIGHT) &mkp RCLK         &kp DEL  &mkp MB5         &mkp MB4         &kp DEL          &kp BSPC         &none
+                              &td_gui_alt  &td_ctrl_os   &kp LSHFT         &none    &mo Syst         &none
+                        >;
+                };
 
                 symbols_layer {
                         label = "Symbols";
