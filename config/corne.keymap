@@ -101,7 +101,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "Base";
+                        display-name = "Base";
                         bindings = <
 // -------------------------------       -------------------------------
 // | ; |  ,  | .    | p    | y   |       |  f  |  g  |  c  |  r  |  l  |
@@ -117,7 +117,7 @@
                 };
 
                 move_layer {
-                        label = "Move";
+                        display-name = "Move";
                         bindings = <
 // ---------------------------------------------       -----------------------------------------------
 // | PgUp | PgDn   | Home   | End     | MClick |       | esc | ScrollL | ScrollR | ScrollD | ScrollR |
@@ -133,7 +133,7 @@
                 };
 
                 symbols_layer {
-                        label = "Symbols";
+                        display-name = "Symbols";
                         bindings = <
 // --------------------       --------------------
 // | @ | ~ | ` | # |  |       |  | [ | ] | < | > |
@@ -149,7 +149,7 @@
                 };
 
                 numbers_layer {
-                        label = "Numbers";
+                        display-name = "Numbers";
                         bindings = <
 // -------------------------------       -------------------------------
 // | F16 | F14 | F12 | F20 | F18 |       | F19 | F11 | F13 | F15 | F17 |
@@ -165,7 +165,7 @@
                 };
 
                 system_layer {
-                        label = "System";
+                        display-name = "System";
                         bindings = <
 // -----------------------------------       ----------------------------------------------
 // |  |  | Bright- | Bright+ | Sleep |       | Play/Pause | Vol+   | Vol-   | Next | Prev |
